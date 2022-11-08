@@ -57,7 +57,7 @@ function App() {
           />
         </div>
 
-        <input type="submit" value="Salvar" disabled={formData.conteudo == "devops" ? true : false}/>
+        <input type="submit" value="Salvar" disabled={formData.conteudo == "" ? true : false}/>
         <h5 className="error">{errorFormData.errorConteudo}</h5>
       </form>
 
