@@ -44,7 +44,7 @@ function App() {
                   onChange={(event) =>
                   setFormData({...formData, conteudo: event.target.value})
             }>
-            <option value="" selected disabled hidden>
+            <option value="" disabled hidden>
               Selecione uma disciplina
             </option>
             <option value="database">Banco de Dados</option>
@@ -57,7 +57,7 @@ function App() {
           />
         </div>
 
-        <input type="submit" value="Salvar" disabled={formData.conteudo == "" ? true : false}/>
+        <input type="submit" value="Salvar" disabled={formData.conteudo == "" || formData.conteudo == "devops" ? true : false}/>
         <h5 className="error">{errorFormData.errorConteudo}</h5>
       </form>
 

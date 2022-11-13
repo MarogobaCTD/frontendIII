@@ -1,0 +1,37 @@
+#videoCor{
+    background: black;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 300px;
+    border: 1px solid rgba(147, 184, 189,0.8);
+    border-radius: 10px;
+}
+
+.video div{
+    padding: 7px;
+}
+
+.video a{
+    text-decoration: none;
+}
+
+.video:hover {
+    transform: scale(1.05);
+}
+
+.video h1, h3{
+    text-align: left;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.video h2 {
+    color: black;
+    font-size: 12px;
+}
+
